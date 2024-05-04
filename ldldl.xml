@@ -1,0 +1,13 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyApp.MainPage">
+    <StackLayout>
+        <!-- ... элементы UI для ввода чисел и операций ... -->
+        <Entry Text="{Binding Expression}" />
+        <Button Text="=" Command="{Binding CalculateCommand}" />
+        <Label Text="{Binding Result}" />
+        <ListView ItemsSource="{Binding History}">
+            <!-- ... шаблон для отображения истории ... -->
+        </ListView>
+    </StackLayout>
+</ContentPage>
